@@ -11,6 +11,7 @@
 		FF1866CE280A77BF0028674B /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1866CD280A77BF0028674B /* PreviewProvider.swift */; };
 		FF1866D0280A7A630028674B /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1866CF280A7A630028674B /* Double.swift */; };
 		FF1866D2280A81970028674B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1866D1280A81970028674B /* HomeViewModel.swift */; };
+		FF1866D5280C4CC70028674B /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1866D4280C4CC60028674B /* CoinDataService.swift */; };
 		FFD28DF62806F60400E1F02F /* SwiftfulCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD28DF52806F60400E1F02F /* SwiftfulCryptoApp.swift */; };
 		FFD28DF82806F60400E1F02F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD28DF72806F60400E1F02F /* ContentView.swift */; };
 		FFD28DFA2806F60700E1F02F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFD28DF92806F60700E1F02F /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		FF1866CD280A77BF0028674B /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		FF1866CF280A7A630028674B /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		FF1866D1280A81970028674B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FF1866D4280C4CC60028674B /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		FFD28DF22806F60300E1F02F /* Crypto tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD28DF52806F60400E1F02F /* SwiftfulCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulCryptoApp.swift; sourceTree = "<group>"; };
 		FFD28DF72806F60400E1F02F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF1866D3280C4C990028674B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FF1866D4280C4CC60028674B /* CoinDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		FFD28DE92806F60300E1F02F = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +79,7 @@
 		FFD28DF42806F60400E1F02F /* SwiftfulCrypto */ = {
 			isa = PBXGroup;
 			children = (
+				FF1866D3280C4C990028674B /* Services */,
 				FFD28E2C280851B600E1F02F /* Models */,
 				FFD28E062807C15500E1F02F /* Core */,
 				FFD28E032806F8C400E1F02F /* Extensions */,
@@ -228,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1866D5280C4CC70028674B /* CoinDataService.swift in Sources */,
 				FF1866CC280A77530028674B /* CoinRowView.swift in Sources */,
 				FF1866D2280A81970028674B /* HomeViewModel.swift in Sources */,
 				FFD28DF82806F60400E1F02F /* ContentView.swift in Sources */,
