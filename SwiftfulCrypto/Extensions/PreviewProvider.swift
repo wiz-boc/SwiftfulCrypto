@@ -18,6 +18,9 @@ final class DeveloperPreview {
     static let instance = DeveloperPreview()
     private init() {}
     
+    let stat1 = StatisticModel(title: "Market Cap", value: "$12.5Bn", percentageChange: 25.34)
+    let stat2 = StatisticModel(title: "Total Volumne", value: "$1.23Tr")
+    let stat3 = StatisticModel(title: "Portfolio Cap", value: "$50k", percentageChange: -5.76)
     let homeVM = HomeViewModel()
     let coin = CoinModel(
         id: "bitcoin",
