@@ -23,6 +23,7 @@ struct HomeView: View {
                 .sheet(isPresented: $showPortfolioView) {
                     PortfolioView()
                         .environmentObject(vm)
+                    //SettingsView()
                 }
             
             VStack{
@@ -71,10 +72,11 @@ extension HomeView {
             CircleButtonView(iconName: showPortfolio ? "plus" : "info")
                 .animation(.none, value: showPortfolio)
                 .onTapGesture {
-                    if showPortfolio {
-                        showPortfolioView.toggle()
-                    } else {
+                    if !showPortfolio {
                         showSettingsView.toggle()
+                
+                    } else {
+                        showPortfolioView.toggle()
                     }
                 }
                 .background(
